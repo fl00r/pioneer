@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["pedro.yanoviches@gmail.com"]
   s.homepage    = ""
   s.summary     = "HTTP crawler"
-  s.description = "Simple async HTTP crawler"
+  s.description = "Simple async HTTP crawler based on em-synchrony"
 
   s.rubyforge_project = "pioneer"
 
