@@ -1,0 +1,235 @@
+# Logfile created on 2012-02-21 15:56:06 +0400 by logger.rb/25413
+I, [2012-02-21T15:56:06.950738 #9721]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T15:56:07.043717 #9721] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T15:56:07.043965 #9721]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T15:56:07.576499 #9721] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T15:56:28.185323 #9787]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T15:56:28.276543 #9787] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T15:56:28.276734 #9787]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T15:56:28.762759 #9787] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T15:56:45.850072 #9854]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T15:56:45.963320 #9854] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T15:56:45.963886 #9854]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T15:56:46.433626 #9854] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T15:57:45.158598 #9927]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T15:57:45.303749 #9927]  INFO -- : going to http://www.design.ru
+E, [2012-02-21T15:57:45.310007 #9927] ERROR -- : This http://www.design.ru returns this http status: 302
+I, [2012-02-21T15:57:45.313111 #9927]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T15:57:45.416994 #9927] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T15:57:45.417177 #9927]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T15:57:46.050008 #9927] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T15:58:34.946239 #10074]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T15:58:35.098319 #10074]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T15:58:36.520945 #10074]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T15:58:36.523307 #10074] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T15:58:36.544004 #10074]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T15:58:36.635574 #10074] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T15:58:36.636135 #10074]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T15:58:37.120265 #10074] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T15:59:29.758322 #10190]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T15:59:29.849315 #10190]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T15:59:30.644716 #10190]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T15:59:30.669968 #10190] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T15:59:30.672302 #10190]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T15:59:30.774769 #10190] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T15:59:30.775180 #10190]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T15:59:31.256460 #10190] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T16:56:24.649433 #11281]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T16:56:24.823201 #11281]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T16:56:26.055842 #11281]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T16:56:26.106994 #11281] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T16:56:26.689281 #11281]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T16:56:26.780596 #11281] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T16:56:26.781293 #11281]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T16:56:27.113799 #11281] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:23:31.144220 #12401]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:23:31.235050 #12401] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:23:31.235524 #12401]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:23:31.698002 #12401] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:23:31.700488 #12401]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:23:31.791307 #12401]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:23:32.782501 #12401]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:23:32.833471 #12401] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:24:21.295999 #12518]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:24:21.389753 #12518]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:24:22.255880 #12518]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:24:22.258720 #12518] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:24:22.261267 #12518]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:24:22.353081 #12518] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:24:22.353291 #12518]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:24:22.846259 #12518] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:26:18.156000 #12868]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:26:18.238108 #12868]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:26:19.000775 #12868]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:26:19.002328 #12868] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:26:19.585067 #12868]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:26:19.675133 #12868] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:26:19.675330 #12868]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:26:20.137098 #12868] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:27:04.662293 #12938]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:27:04.824191 #12938]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:27:06.162671 #12938]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:27:06.173539 #12938] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:27:08.075082 #12938]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:27:08.166101 #12938] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:27:08.166671 #12938]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:27:08.641691 #12938] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:30:27.876344 #13159]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:30:27.979395 #13159] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:30:27.979697 #13159]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:30:28.461895 #13159] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:30:28.463216 #13159]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:30:28.547071 #13159]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:30:29.847468 #13159]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:30:29.849067 #13159] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:30:41.167336 #13222]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:30:41.258701 #13222] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:30:41.259007 #13222]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:30:41.665798 #13222] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:30:41.666799 #13222]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:30:41.838423 #13222]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:30:42.702607 #13222]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:30:42.705074 #13222] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:31:03.128685 #13289]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:31:03.242435 #13289] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:31:03.242858 #13289]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:31:03.705925 #13289] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:31:03.708489 #13289]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:31:03.839315 #13289]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:31:05.199920 #13289]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:31:05.201933 #13289] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:31:37.252656 #13352]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:31:37.353249 #13352] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:31:37.353475 #13352]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:31:37.841851 #13352] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:31:37.844258 #13352]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:31:37.941411 #13352]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:31:38.695089 #13352]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:31:38.696510 #13352] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:36:44.914609 #13579]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:36:45.005849 #13579] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:36:45.006038 #13579]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:36:45.345374 #13579] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:36:46.254190 #13579]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:36:46.346206 #13579]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:36:47.430803 #13579]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:36:47.464951 #13579] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:37:15.648738 #13644]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:37:15.742208 #13644]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:37:16.689084 #13644]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:37:16.691595 #13644] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:37:16.711897 #13644]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:37:16.806885 #13644] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:37:16.807287 #13644]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:37:17.150475 #13644] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:37:29.122256 #13659]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:37:29.222485 #13659] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:37:29.222721 #13659]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:37:29.700169 #13659] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:37:32.345565 #13659]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:37:32.437027 #13659]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:37:33.879931 #13659]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:37:33.881332 #13659] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:39:55.898347 #13950]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:39:55.998498 #13950] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:39:55.998691 #13950]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:39:56.584279 #13950] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:39:56.606059 #13950]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:39:56.805236 #13950]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:39:57.716714 #13950]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:39:57.769227 #13950] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:40:22.794176 #14013]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:40:22.893861 #14013] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:40:22.894093 #14013]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:40:23.926762 #14013] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:40:23.929196 #14013]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:40:24.046046 #14013]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:40:25.279659 #14013]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:40:25.291208 #14013] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:40:42.095132 #14076]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:40:42.097804 #14076]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:40:43.044516 #14076]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:40:43.051321 #14076] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:40:43.904552 #14076]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:40:43.906387 #14076]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:40:44.005170 #14076] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:40:44.222587 #14076] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:41:06.774245 #14147]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:41:06.884760 #14147]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:41:08.078616 #14147]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:41:08.080100 #14147] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:41:08.080798 #14147]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:41:08.081745 #14147]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:41:08.180679 #14147] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:41:08.546340 #14147] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:41:47.859505 #14212]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:41:47.862404 #14212]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:41:49.263500 #14212]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:41:49.265738 #14212] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:41:49.268819 #14212]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:41:49.270504 #14212]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:41:49.359717 #14212] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:41:49.724896 #14212] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:42:02.040042 #14278]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:42:02.045503 #14278]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:42:03.097382 #14278]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:42:03.111696 #14278] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:42:07.468828 #14278]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:42:07.470411 #14278]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:42:07.729228 #14278] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:42:08.166522 #14278] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:42:14.699425 #14292]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:42:14.701262 #14292]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:42:14.791557 #14292] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:42:15.177552 #14292] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:42:15.653528 #14292]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:42:15.655785 #14292]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:42:17.230408 #14292]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:42:17.231986 #14292] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:42:28.777103 #14407]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:42:28.778055 #14407]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:42:29.881384 #14407]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:42:29.883695 #14407] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:42:30.337814 #14407]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:42:30.338816 #14407]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:42:30.428322 #14407] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:42:30.800923 #14407] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:44:45.641471 #14590]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:44:45.740832 #14590]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:44:46.811551 #14590]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:44:46.812955 #14590] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:45:46.317743 #14721]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:45:46.380319 #14721]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:45:47.390893 #14721]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:45:47.392400 #14721] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:45:47.405066 #14721]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:45:47.407141 #14721]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:45:47.506933 #14721] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:45:47.876285 #14721] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:46:52.307808 #14913]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:46:52.309030 #14913]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:46:52.501049 #14913] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:46:52.897066 #14913] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:46:52.900904 #14913]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:46:53.002378 #14913]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:46:54.015426 #14913]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:46:54.016873 #14913] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:47:05.019896 #14977]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:47:05.029944 #14977]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:47:06.050459 #14977]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:47:06.053818 #14977] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:47:07.702470 #14977]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:47:07.704210 #14977]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:47:07.802635 #14977] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:47:08.020641 #14977] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:47:29.266034 #15090]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:47:29.408120 #15090]  INFO -- : going to http://www.amazon.com
+I, [2012-02-21T17:47:31.297938 #15090]  INFO -- : going to http://www.ru.erro
+E, [2012-02-21T17:47:31.300430 #15090] ERROR -- : Response for http://www.ru.erro get an error: unable to resolve server address
+I, [2012-02-21T17:47:31.736266 #15090]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:47:31.837934 #15090] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:47:31.838138 #15090]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:47:32.311912 #15090] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:47:41.410137 #15155]  INFO -- : going to http://www.apple.com
+I, [2012-02-21T17:47:41.496921 #15155]  INFO -- : going to http://www.amazon.com
+E, [2012-02-21T17:47:41.598571 #15155] ERROR -- : This http://www.amazon.com returns this http status: 0

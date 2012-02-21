@@ -1,0 +1,117 @@
+# Logfile created on 2012-02-21 15:56:46 +0400 by logger.rb/25413
+I, [2012-02-21T15:56:46.436858 #9854]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T15:56:46.528340 #9854] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T15:56:46.528523 #9854]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T15:56:46.996581 #9854] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T15:57:46.051315 #9927]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T15:57:46.142582 #9927] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T15:57:46.143035 #9927]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T15:57:46.593031 #9927] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T15:58:37.122407 #10074]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T15:58:37.213985 #10074] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T15:58:37.214507 #10074]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T15:58:37.537493 #10074] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T15:59:31.259182 #10190]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T15:59:31.350126 #10190] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T15:59:31.350633 #10190]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T15:59:31.809402 #10190] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T16:56:26.109841 #11281]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T16:56:26.210426 #11281] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T16:56:26.210901 #11281]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T16:56:26.686281 #11281] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:23:32.916817 #12401]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:23:33.017951 #12401] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:23:33.018448 #12401]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:23:33.456590 #12401] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:24:22.849233 #12518]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:24:22.941085 #12518] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:24:22.941529 #12518]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:24:23.391117 #12518] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:26:19.003117 #12868]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:26:19.102857 #12868] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:26:19.103078 #12868]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:26:19.581359 #12868] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:27:07.230295 #12938]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:27:07.338267 #12938] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:27:07.338689 #12938]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:27:08.074117 #12938] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:30:27.208628 #13159]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:30:27.300371 #13159] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:30:27.300826 #13159]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:30:27.875472 #13159] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:30:43.516594 #13222]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:30:43.607757 #13222] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:30:43.608179 #13222]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:30:44.078530 #13222] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:31:05.659196 #13289]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:31:05.750873 #13289] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:31:05.751083 #13289]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:31:06.078252 #13289] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:31:36.479763 #13352]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:31:36.580267 #13352] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:31:36.580537 #13352]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:31:37.250178 #13352] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:36:45.346897 #13579]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:36:45.447644 #13579] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:36:45.447854 #13579]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:36:46.224750 #13579] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:37:15.043694 #13644]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:37:15.135489 #13644] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:37:15.135685 #13644]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:37:15.647763 #13644] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:37:29.701054 #13659]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:37:29.791278 #13659] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:37:29.791581 #13659]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:37:30.268975 #13659] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:39:57.770586 #13950]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:39:57.869899 #13950] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:39:57.870149 #13950]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:39:58.309475 #13950] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:40:25.293790 #14013]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:40:25.397802 #14013] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:40:25.398395 #14013]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:40:25.835441 #14013] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:40:44.225274 #14076]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:40:44.227205 #14076]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:40:44.317387 #14076] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:40:44.683804 #14076] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:41:05.929348 #14147]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:41:05.930571 #14147]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:41:06.229128 #14147] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:41:06.771720 #14147] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:41:47.366029 #14212]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:41:47.370550 #14212]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:41:47.470420 #14212] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:41:47.858389 #14212] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:42:01.548325 #14278]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:42:01.553229 #14278]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:42:01.642552 #14278] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:42:02.035987 #14278] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:42:15.189749 #14292]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:42:15.190575 #14292]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:42:15.290003 #14292] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:42:15.650940 #14292] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:42:29.885974 #14407]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:42:29.887481 #14407]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:42:29.985659 #14407] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:42:30.335484 #14407] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:45:45.833306 #14721]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:45:45.834693 #14721]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:45:45.924095 #14721] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:45:46.315001 #14721] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:46:55.381322 #14913]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:46:55.382329 #14913]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:46:55.481572 #14913] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:46:55.704456 #14913] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:47:08.023216 #14977]  INFO -- : going to http://google.com/redirectmeplease
+I, [2012-02-21T17:47:08.024997 #14977]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:47:08.123249 #14977] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+E, [2012-02-21T17:47:08.479746 #14977] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:47:31.302970 #15090]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:47:31.402725 #15090] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:47:31.402945 #15090]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:47:31.715373 #15090] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
+I, [2012-02-21T17:47:39.297931 #15155]  INFO -- : going to http://google.com/redirectmeplease
+E, [2012-02-21T17:47:39.398705 #15155] ERROR -- : This http://google.com/redirectmeplease returns this http status: 301
+I, [2012-02-21T17:47:39.398893 #15155]  INFO -- : going to http://www.amazon.com/notfoundpage
+E, [2012-02-21T17:47:39.737408 #15155] ERROR -- : This http://www.amazon.com/notfoundpage returns this http status: 404
