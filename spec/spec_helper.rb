@@ -22,7 +22,6 @@ class LastfmEnum
 
   def each
     ARTISTS.each do |artist|
-      p artist
       url = "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=#{artist}&api_key=b25b959554ed76058ac220b7b2e0a026&format=json"
       yield url
     end
@@ -37,5 +36,16 @@ class LastfmCrawler < Pioneer::Base
   def processing(req)
     json = Yajl::Parser.parse(req.response.response)
     json["similarartists"]["@attr"]["artist"]
+  end
+end
+
+# Kinopoisk
+class KinopoiskCrawler < Pioneer::Base
+  def locations
+    ["http://www.kinopoisk.ru/level/1/film/614667/"]
+  end
+
+  def processing(req)
+    req.response.response.size
   end
 end

@@ -51,4 +51,16 @@ describe Pioneer::Request do
     @lastfm_pioneer = LastfmCrawler.new(sleep: 0.25)
     @lastfm_pioneer.start.sort.must_equal LastfmEnum.const_get(:ARTISTS).sort
   end
+
+  it "should use headers" do
+    @crawler1 = KinopoiskCrawler.new(random_header: false)
+    @crawler2 = KinopoiskCrawler.new(random_header: false, redirects: 1)
+    @crawler3 = KinopoiskCrawler.new(random_header: true)
+    # this one will redirect
+    @crawler1.start.must_equal [nil]
+    # this one will return some restrictions (it need real headres)
+    (@crawler2.start.first < 10000).must_equal true
+    # and this one will fire up
+    (@crawler3.start.first > 10000).must_equal true
+  end
 end
