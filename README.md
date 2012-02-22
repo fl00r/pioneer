@@ -2,6 +2,8 @@
 
 Pioneer is a simple async HTTP crawler based on em-synchrony
 
+And it is very alpha right now. 
+
 # Install
 
 ```bash
@@ -77,39 +79,5 @@ crawler.processing = proc{ req.response.response_header.status }
 crawler.if_status_404{ |req| "Oups" }
 ```
 
-As far as `locations` should return Enumerable you can use nested crawlers to save whole site
-
-```ruby
-require 'pioneer'
-require 'nokogiri'
-class Links
-  include Enumerable
-  def initialize(link)
-    @links = [link]
-  end
-
-  def <<(link)
-    @links << link
-  end
-
-  def each
-    @links.each{ |url| url }
-  end
-end
-
-class LinksCrawler < Pioneer::Base
-  def locations
-    @links = Links.new("http://www.gazeta.ru")
-  end
-
-  def processing(req)
-    doc = Nokogiri::HTML.parse(req.response.response)
-    links = doc.css("a").map{|link| link["href"]} # + some logic to filter links to prevent duplications and another hosts etc
-    @links << links
-    File.new(req.url, "w+"){ |f| f << req.response.response }
-  end
-end
-LinksCrawler.new(concurrency: 20, redirects: 1, sleep: 0.5).start
-```
 
 ... to be continued
