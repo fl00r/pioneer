@@ -1,7 +1,7 @@
 # encoding: utf-8
 module Pioneer
   class Request
-    attr_reader :pioneer, :url, :result, :response
+    attr_reader :pioneer, :url, :result, :response, :error
     def initialize(url, pioneer)
       @url, @pioneer = url, pioneer
       @url = begin
@@ -20,12 +20,12 @@ module Pioneer
       begin
         @response = EventMachine::HttpRequest.new(url).get(pioneer.http_opts)
       rescue => e
-        error = "Request totaly failed. Url: #{url}, error: #{e.message}"
+        @error = "Request totaly failed. Url: #{url}, error: #{e.message}"
         pioneer.logger.fatal(error)
         if pioneer.respond_to? :if_request_error
           return pioneer.send(:if_request_error, self)
         else
-          raise HttpRequestError, error
+          raise HttpRequestError, @error
         end
       end
       handle_response_error_or_return_result
