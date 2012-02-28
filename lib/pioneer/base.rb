@@ -39,7 +39,7 @@ module Pioneer
 
     def logger
       @logger ||= begin
-        logger = @log_enabled ? Logger.new("#{name}.log") : Logger.new("/dev/null")
+        logger = Logger.new(STDOUT)
         logger.level = log_level
         logger
       end
