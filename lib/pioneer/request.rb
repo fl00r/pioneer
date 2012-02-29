@@ -23,12 +23,14 @@ module Pioneer
         @error = "Request totaly failed. Url: #{url}, error: #{e.message}"
         pioneer.logger.fatal(error)
         if pioneer.respond_to? :if_request_error
-          return pioneer.send(:if_request_error, self)
+          return pioneer.if_request_error(self)
         else
           raise HttpRequestError, @error
         end
       end
       handle_response_error_or_return_result
+    rescue HttpRetryRequest => e
+      retry
     end
 
     # handle http error
@@ -37,7 +39,7 @@ module Pioneer
         error = "Response for #{url} get an error: #{response.error}"
         pioneer.logger.error(error)
         if pioneer.respond_to? :if_response_error
-          return pioneer.send(:if_response_error, self)
+          return pioneer.if_response_error(self)
         else
           raise HttpResponseError, error
         end
@@ -55,11 +57,15 @@ module Pioneer
         if pioneer.respond_to? "if_status_#{status}".to_sym
           pioneer.send("if_status_#{status}", self)
         elsif pioneer.respond_to? :if_status_not_200
-          pioneer.send(:if_status_not_200, self)
+          pioneer.if_status_not_200(self)
         else
           nil # nothing?
         end
       end
+    end
+
+    def retry
+      raise HttpRetryRequest
     end
   end
 end

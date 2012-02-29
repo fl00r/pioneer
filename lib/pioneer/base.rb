@@ -6,6 +6,9 @@ module Pioneer
   class LocationsNotEnumerator < RuntimeError; end
   class HttpRequestError < RuntimeError; end
   class HttpResponseError < RuntimeError; end
+  class HttpStatusError < RuntimeError; end
+  class HttpRetryRequest < RuntimeError; end
+
   class Base
     attr_reader :name, :concurrency, :sleep, :log_level, :redirect
 

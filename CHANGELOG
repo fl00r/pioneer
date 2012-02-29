@@ -9,3 +9,8 @@
 ## v0.0.1alpha
 
 * Heh, but it is still in dev. So let's call it alpha
+
+## v0.0.4
+
+* Fixed stackoverflow on retrying request after failing
+* added `req.retry` method to retry http request in error handlers
