@@ -4,7 +4,6 @@ require "em-synchrony/em-http"
 require "em-synchrony/fiber_iterator"
 # patch - to remove! maybe pull to em-synchrony?
 require "patch/iterator"
-require "patch/fiber_periodic_timer_iterator"
 # other
 require "logger"
 require 'uri'

@@ -6,7 +6,8 @@ module Pioneer
       @url, @pioneer = url, pioneer
       @url = begin
         url = "http://" + url unless url =~ /http/
-        URI.escape(url)
+        url = URI.escape(url)
+        url.gsub("&amp;", "%26")
       end
     end
 
@@ -36,8 +37,8 @@ module Pioneer
     # handle http error
     def handle_response_error_or_return_result
       if response.error
-        error = "Response for #{url} get an error: #{response.error}"
-        pioneer.logger.error(error)
+        @error = "Response for #{url} get an error: #{response.error}"
+        pioneer.logger.error(@error)
         if pioneer.respond_to? :if_response_error
           return pioneer.if_response_error(self)
         else
@@ -53,7 +54,8 @@ module Pioneer
       when 200
         pioneer.processing(self)
       else
-        pioneer.logger.error("This #{url} returns this http status: #{status}")
+        @error = "This #{url} returns this http status: #{status}"
+        pioneer.logger.error(@error)
         if pioneer.respond_to? "if_status_#{status}".to_sym
           pioneer.send("if_status_#{status}", self)
         elsif pioneer.respond_to? :if_status_not_200

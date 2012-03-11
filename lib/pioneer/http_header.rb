@@ -5,10 +5,11 @@ module Pioneer
     def random
       header = headers.sample
       headers = {
-        'Referer' => 'http://www.google.com/',
+        'Referer' => 'http://www.google.ru/#hl=ru&newwindow=1&sa=X&ei=6oPXTp3OB4Tl4QTdl-zyDQ&ved=0CCAQvwUoAQ&q=kinopoisk&spell=1&bav=on.2,or.r_gc.r_pw.r_cp.,cf.osb&fp=c8a5ca24098b41f5&biw=1127&bih=628',
         'User-Agent' => header,
         'Accept'  => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        'Connection'  => 'keep-alive'
+        'Connection'  => 'keep-alive',
+        'Cache-Control' => 'no-cache'
       }  
     end
 

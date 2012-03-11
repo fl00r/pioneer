@@ -32,12 +32,25 @@ module Pioneer
       EM.synchrony do
         # Using FiberPeriodicTimerIterator that implements RPS (request per second feature)
         # In case @sleep is 0 it behaves like standart FiberIterator
-        EM::Synchrony::FiberPeriodicTimerIterator.new(locations, concurrency, sleep).map do |url|
+        EM::Synchrony::FiberIterator.new(locations, concurrency).map do |url|
+          sleep
           result << Request.new(url, self).perform
         end
         EM.stop
       end
       result
+    end
+
+    # Sleep if the last request was recently (less then timout period)
+    def sleep
+      @next_start ||= Time.now
+      if @sleep > 0
+        now = Time.now
+        sleep_time = @next_start - Time.now
+        sleep_time = 0 if sleep_time < 0
+        @next_start = Time.now + sleep_time + @sleep
+        EM::Synchrony.sleep(sleep_time) if sleep_time > 0
+      end
     end
 
     def logger
