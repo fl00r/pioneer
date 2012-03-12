@@ -31,14 +31,14 @@ module Pioneer
         if pioneer.respond_to? :if_request_error
           return pioneer.if_request_error(self)
         else
-          raise HttpRequestError, @error
+          raise Pioneer::HttpRequestError, @error
         end
       end
       handle_response_error_or_return_result
-    rescue HttpRetryRequest => e
+    rescue Pioneer::HttpRetryRequest => e
       retry
-    rescue HttpSkipRequest => e
-      raise SkipResult
+    rescue Pioneer::HttpSkipRequest => e
+      raise e
     end
 
     # handle http error
@@ -49,7 +49,7 @@ module Pioneer
         if pioneer.respond_to? :if_response_error
           return pioneer.if_response_error(self)
         else
-          raise HttpResponseError, error
+          raise Pioneer::HttpResponseError, error
         end
       end
       handle_status_or_return_result
@@ -74,9 +74,11 @@ module Pioneer
     end
 
     def retry(count=nil)
-      @counter += 1 if count
-      raise HttpSkipRequest if count && @counter > count
-      raise HttpRetryRequest
+      if count
+        @counter += 1
+        raise Pioneer::HttpSkipRequest if @counter > count
+      end
+      raise Pioneer::HttpRetryRequest
     end
   end
 end

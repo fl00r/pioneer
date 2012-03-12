@@ -1,15 +1,14 @@
 # encoding: utf-8
 module Pioneer
-  class UndefinedLocations < RuntimeError; end
-  class LocationsNotEnumerable < RuntimeError; end
-  class UndefinedProcessing < RuntimeError; end
-  class LocationsNotEnumerator < RuntimeError; end
-  class HttpRequestError < RuntimeError; end
-  class HttpResponseError < RuntimeError; end
-  class HttpStatusError < RuntimeError; end
-  class HttpRetryRequest < RuntimeError; end
-  class HttpSkipRequest < RuntimeError; end
-  class SkipResult < RuntimeError; end
+  class UndefinedLocations < StandardError; end
+  class LocationsNotEnumerable < StandardError; end
+  class UndefinedProcessing < StandardError; end
+  class LocationsNotEnumerator < StandardError; end
+  class HttpRequestError < StandardError; end
+  class HttpResponseError < StandardError; end
+  class HttpStatusError < StandardError; end
+  class HttpRetryRequest < StandardError; end
+  class HttpSkipRequest < StandardError; end
 
   class Base
     attr_reader :name, :concurrency, :sleep, :log_level, :redirect
@@ -38,7 +37,8 @@ module Pioneer
           sleep
           begin
             result << Request.new(url, self).perform
-          rescue SkipResult => e
+          rescue Pioneer::HttpSkipRequest => e
+            return nil # do nothing?
           end
         end
         EM.stop
