@@ -1,9 +1,10 @@
 # encoding: utf-8
 module Pioneer
   class Request
-    attr_reader :pioneer, :url, :result, :response, :error
+    attr_reader :pioneer, :url, :result, :response, :error, :counter
     def initialize(url, pioneer)
       @url, @pioneer = url, pioneer
+      @counter = 0
       @url = begin
         url = "http://" + url unless url =~ /http/
         url = URI.escape(url)
@@ -36,6 +37,8 @@ module Pioneer
       handle_response_error_or_return_result
     rescue HttpRetryRequest => e
       retry
+    rescue HttpSkipRequest => e
+      return nil
     end
 
     # handle http error
@@ -70,7 +73,9 @@ module Pioneer
       end
     end
 
-    def retry
+    def retry(count=nil)
+      @counter += 1 if count
+      raise HttpSkipRequest if count && @counter > count
       raise HttpRetryRequest
     end
   end
