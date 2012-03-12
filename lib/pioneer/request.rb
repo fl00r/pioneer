@@ -8,9 +8,9 @@ module Pioneer
         url = "http://" + url unless url =~ /http/
         url = URI.escape(url)
         # replace "&" ampersands :)
-        url.gsub("&amp;", "%26")
+        url.gsub!("&amp;", "%26")
         # replace pluses
-        url.gsub("+", "%2B")
+        url.gsub!("+", "%2B")
       end
     end
 
