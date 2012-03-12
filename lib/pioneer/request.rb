@@ -71,7 +71,7 @@ module Pioneer
     end
 
     def retry
-      pioneer.logger "Retrying"
+      pioneer.logger.warn "Retrying"
       raise HttpRetryRequest
     end
   end
