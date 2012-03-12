@@ -7,7 +7,10 @@ module Pioneer
       @url = begin
         url = "http://" + url unless url =~ /http/
         url = URI.escape(url)
+        # replace "&" ampersands :)
         url.gsub("&amp;", "%26")
+        # replace pluses
+        url.gsub("+", "%2B")
       end
     end
 
@@ -67,6 +70,7 @@ module Pioneer
     end
 
     def retry
+      pioneer.logger "Retrying"
       raise HttpRetryRequest
     end
   end
