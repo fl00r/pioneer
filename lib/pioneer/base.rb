@@ -9,6 +9,7 @@ module Pioneer
   class HttpStatusError < RuntimeError; end
   class HttpRetryRequest < RuntimeError; end
   class HttpSkipRequest < RuntimeError; end
+  class SkipResult < RuntimeError; end
 
   class Base
     attr_reader :name, :concurrency, :sleep, :log_level, :redirect
@@ -35,7 +36,10 @@ module Pioneer
         # In case @sleep is 0 it behaves like standart FiberIterator
         EM::Synchrony::FiberIterator.new(locations, concurrency).map do |url|
           sleep
-          result << Request.new(url, self).perform
+          begin
+            result << Request.new(url, self).perform
+          rescue SkipResult => e
+          end
         end
         EM.stop
       end

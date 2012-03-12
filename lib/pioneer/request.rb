@@ -27,7 +27,7 @@ module Pioneer
         @response = EventMachine::HttpRequest.new(url).get(pioneer.http_opts)
       rescue => e
         @error = "Request totaly failed. Url: #{url}, error: #{e.message}"
-        pioneer.logger.fatal(error)
+        pioneer.logger.fatal(@error)
         if pioneer.respond_to? :if_request_error
           return pioneer.if_request_error(self)
         else
@@ -38,7 +38,7 @@ module Pioneer
     rescue HttpRetryRequest => e
       retry
     rescue HttpSkipRequest => e
-      return nil
+      raise SkipResult
     end
 
     # handle http error
