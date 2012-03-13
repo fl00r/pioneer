@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
 
   # specify any dependencies here; for example:
   s.add_development_dependency "yajl-ruby"
+  s.add_development_dependency "nokogiti"
   s.add_runtime_dependency "em-synchrony"
   s.add_runtime_dependency "em-http-request"
 end
