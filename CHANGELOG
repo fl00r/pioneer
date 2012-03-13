@@ -14,3 +14,13 @@
 
 * Fixed stackoverflow on retrying request after failing
 * added `req.retry` method to retry http request in error handlers
+
+## v0.0.5
+
+* Added some minor fixes
+
+## v0.0.6
+
+* Added skip functionality
+* Added some docs
+* Added "response_body" and "response_header" shortcuts
