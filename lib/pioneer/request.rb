@@ -102,7 +102,7 @@ module Pioneer
     # We should parse url befor sending request
     # We use URI.escape for escaping
     # IMPORTAINT: We should replace ampersand (&) in params with "&amp;" !!!
-    # Pluses (+) weill be replaced with "%2B"
+    # Pluses (+) will be replaced with "%2B"
     #
     def parse_url(url)
       url = "http://" + url unless url =~ /http/

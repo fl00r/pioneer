@@ -16,7 +16,7 @@ module Pioneer
     def initialize(opts = {})
       raise UndefinedLocations, "you should specify `locations` method in your `self.class`" unless self.methods.include? :locations
       raise UndefinedProcessing, "you should specify `processing` method in your `self.class`" unless self.methods.include? :processing
-      raise LocationsNotEnumerator, "you should specify `locations` to return Enumerator" unless self.locations.methods.include? :each
+      # raise LocationsNotEnumerator, "you should specify `locations` to return Enumerator" unless self.locations.methods.include? :each
       @name          = opts[:name]          || "crawler"
       @concurrency   = opts[:concurrency]   || 10
       @sleep         = opts[:sleep]         || 0 # sleep is reversed RPS (1/RPS) - frequency of requests.
@@ -27,12 +27,12 @@ module Pioneer
       @redirects     = opts[:redirects]     || nil
     end
 
+    #
+    # Main method: starting crawling through locations
+    #
     def start
-      raise LocationsNotEnumerable, "location should respond to `each`" unless locations.respond_to? :each
       result = []
       EM.synchrony do
-        # Using FiberPeriodicTimerIterator that implements RPS (request per second feature)
-        # In case @sleep is 0 it behaves like standart FiberIterator
         EM::Synchrony::FiberIterator.new(locations, concurrency).map do |url|
           counter = 0
           begin
@@ -51,7 +51,9 @@ module Pioneer
       result
     end
 
+    #
     # Sleep if the last request was recently (less then timout period)
+    #
     def sleep
       @next_start ||= Time.now
       if @sleep > 0
@@ -63,6 +65,9 @@ module Pioneer
       end
     end
 
+    #
+    # Default Pioneer logger
+    #
     def logger
       @logger ||= begin
         logger = Logger.new(STDOUT)
@@ -71,6 +76,9 @@ module Pioneer
       end
     end
 
+    #
+    # Set headers, such as redirects, cookies etc
+    #
     def http_opts
       opts = {}
       opts[:head] = random_header if @random_header
@@ -79,11 +87,16 @@ module Pioneer
       opts
     end
 
+    #
+    # Generate random header for request
+    #
     def random_header
       HttpHeader.random
     end
 
+    #
     # we should override only our methods: locations, processing, if_XXX
+    #
     def method_missing(method_name, *args, &block)
       case method_name
       when /locations.*=|processing.*=|if_.+=/
@@ -94,6 +107,9 @@ module Pioneer
       end
     end
 
+    # 
+    # Overriding methods as singeltons so they are availible only for current instance of crawler
+    #
     def override_method(method_name, arg)
       if Proc === arg
         self.define_singleton_method method_name do |req|
