@@ -18,7 +18,7 @@ describe Pioneer::Request do
   end
 
   it "should redefine methods" do
-    processing = proc{ |req| req.response.response_header.status + 1 }
+    processing = proc{ |req| req.response_header.status + 1 }
     @pioneer2.processing = processing
     @pioneer2.locations = ["www.apple.com", "www.amazon.com"]
     @pioneer2.start.must_equal [201, 201]
@@ -62,5 +62,27 @@ describe Pioneer::Request do
     (@crawler2.start.first < 10000).must_equal true
     # and this one will fire up
     (@crawler3.start.first > 10000).must_equal true
+  end
+
+  it "should skip url" do
+    @result = []
+    crawler = Pioneer::Crawler.new(redirects: 1)
+    crawler.locations = ["http://not.exist.page.com", "http://amazon.com"]
+    crawler.processing = proc{ |req| @result << req.url }
+    crawler.if_response_error = proc{ |req| req.skip }
+    crawler.start
+    @result.must_equal ["http://amazon.com"]
+  end
+
+  it "should retry 2 times and skip" do
+    @result = []
+    @retries = nil
+    crawler = Pioneer::Crawler.new(redirects: 1)
+    crawler.locations = ["http://not.exist.page.com", "http://amazon.com"]
+    crawler.processing = proc{ |req| @result << req.url }
+    crawler.if_response_error = proc{ |req| @retries = req.counter; req.retry(2); }
+    crawler.start
+    @result.must_equal ["http://amazon.com"]
+    @retries.must_equal 2
   end
 end

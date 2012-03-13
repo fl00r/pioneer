@@ -2,12 +2,16 @@
 module Pioneer
   class Request
     attr_reader :pioneer, :url, :result, :response, :error, :counter
+    
     def initialize(url, pioneer)
       @pioneer = pioneer
       @url     = parse_url(url)
       @counter = 0
     end
 
+    #
+    # Request processing
+    #
     def perform
       pioneer.logger.info("going to #{url}")
       @result = handle_request_error_or_return_result
@@ -33,8 +37,6 @@ module Pioneer
       handle_response_error_or_return_result
     rescue Pioneer::HttpRetryRequest => e
       retry
-    rescue Pioneer::HttpSkipRequest => e
-      raise e
     end
 
     #
@@ -101,18 +103,32 @@ module Pioneer
 
     #
     # We should parse url befor sending request
-    # We use CGI.escape for escaping
+    # We use URI.escape for escaping
     # IMPORTAINT: We should replace ampersand (&) in params with "&amp;" !!!
     # Pluses (+) weill be replaced with "%2B"
     #
     def parse_url(url)
       url = "http://" + url unless url =~ /http/
-      url = CGI.escape(url)
+      url = URI.escape(url)
       # replace "&" ampersands :)
       url = url.gsub("&amp;", "%26")
       # replace pluses
       url = url.gsub("+", "%2B")
       url
+    end
+
+    #
+    # Shortcut for response.response
+    #
+    def response_body
+      response.response
+    end
+
+    #
+    # Shortcut for response.response_header
+    #
+    def response_header
+      response.response_header
     end
   end
 end

@@ -38,7 +38,7 @@ module Pioneer
           begin
             result << Request.new(url, self).perform
           rescue Pioneer::HttpSkipRequest => e
-            return nil # do nothing?
+            nil # do nothing?
           end
         end
         EM.stop
