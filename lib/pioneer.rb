@@ -6,7 +6,7 @@ require "em-synchrony/fiber_iterator"
 require "patch/iterator"
 # other
 require "logger"
-require 'uri'
+require 'cgi'
 # Code
 require "pioneer/version"
 require "pioneer/base"
