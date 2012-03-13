@@ -3,10 +3,10 @@ module Pioneer
   class Request
     attr_reader :pioneer, :url, :result, :response, :error, :counter
     
-    def initialize(url, pioneer)
+    def initialize(url, pioneer, counter=0)
       @pioneer = pioneer
       @url     = parse_url(url)
-      @counter = 0
+      @counter = counter
     end
 
     #
@@ -35,8 +35,6 @@ module Pioneer
         end
       end
       handle_response_error_or_return_result
-    rescue Pioneer::HttpRetryRequest => e
-      retry
     end
 
     #
@@ -87,8 +85,7 @@ module Pioneer
     #
     def retry(count=nil)
       if count
-        @counter += 1
-        skip if @counter > count
+        skip if @counter >= count
       end
       raise Pioneer::HttpRetryRequest
     end
