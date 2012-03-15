@@ -24,7 +24,13 @@ module Pioneer
     #
     def handle_request_error_or_return_result
       begin
-        @response = EventMachine::HttpRequest.new(url).get(pioneer.http_opts)
+        req = EM::HttpRequest.new(url).aget pioneer.http_opts
+        if pioneer.headers
+          req.headers{
+            pioneer.headers.call(req)
+          }
+        end
+        @response = EM::Synchrony.sync req
       rescue => e
         @error = "Request totaly failed. Url: #{url}, error: #{e.message}"
         pioneer.logger.fatal(@error)

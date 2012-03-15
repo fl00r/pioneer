@@ -25,6 +25,7 @@ module Pioneer
       @random_header = opts[:random_header] || false
       @header        = opts[:header]        || nil
       @redirects     = opts[:redirects]     || nil
+      @headers       = opts[:headers]      #|| nil
     end
 
     #
@@ -92,6 +93,13 @@ module Pioneer
     #
     def random_header
       HttpHeader.random
+    end
+
+    #
+    # Headers callback
+    #
+    def headers
+      @headers
     end
 
     #
