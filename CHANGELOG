@@ -28,3 +28,4 @@
 ## v0.0.7
 
 * Rescuing of Retry Exception is removed to Base class, so it will be triggered in context of main loop (it will executed with global sleep timeout)
+* Added `headers` callback support
