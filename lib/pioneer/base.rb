@@ -30,6 +30,8 @@ module Pioneer
 
     #
     # Main method: starting crawling through locations
+    # If we catch Pioneer::HttpRetryRequest then we are retrying request
+    # And if we catch Pioneer::HttpSkipRequest we just return nothing?
     #
     def start
       result = []
