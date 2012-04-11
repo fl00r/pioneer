@@ -1,7 +1,7 @@
 # encoding: utf-8
 module Pioneer
   class Request
-    attr_reader :pioneer, :url, :result, :response, :error, :counter
+    attr_reader :pioneer, :url, :result, :response, :error, :counter, :request_opts
     
     def initialize(url, pioneer, counter=0)
       @pioneer = pioneer
@@ -24,7 +24,8 @@ module Pioneer
     #
     def handle_request_error_or_return_result
       begin
-        req = EM::HttpRequest.new(url).aget pioneer.http_opts
+        @request_opts = @pioneer.request_opts
+        req = EM::HttpRequest.new(url, @request_opts).aget pioneer.http_opts
         if pioneer.headers
           req.headers{
             pioneer.headers.call(req)

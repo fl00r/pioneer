@@ -11,7 +11,7 @@ module Pioneer
   class HttpSkipRequest < StandardError; end
 
   class Base
-    attr_reader :name, :concurrency, :sleep, :log_level, :redirect
+    attr_reader :name, :concurrency, :sleep, :log_level, :redirect, :request_opts
 
     def initialize(opts = {})
       raise UndefinedLocations, "you should specify `locations` method in your `self.class`" unless self.methods.include? :locations
@@ -26,6 +26,7 @@ module Pioneer
       @header        = opts[:header]        || nil
       @redirects     = opts[:redirects]     || nil
       @headers       = opts[:headers]      #|| nil
+      @request_opts  = opts[:request_opts] #|| nil
     end
 
     #
@@ -87,6 +88,20 @@ module Pioneer
       opts[:head] = random_header if @random_header
       opts[:head] = @header if @header
       opts[:redirects] = @redirects if @redirects
+      opts
+    end
+
+    #
+    # EmHttpRequest options
+    #
+    def request_opts
+      opts = {}
+      opts = case @request_opts
+      when Proc
+        @request_opts.call
+      else
+        @request_opts
+      end if @request_opts
       opts
     end
 
