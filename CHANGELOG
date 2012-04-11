@@ -33,3 +33,7 @@
 ## v0.0.8
 
 * em-http-request options support added
+
+## v0.0.9
+
+* pushing request_opt to init
