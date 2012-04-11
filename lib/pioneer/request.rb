@@ -7,6 +7,7 @@ module Pioneer
       @pioneer = pioneer
       @url     = parse_url(url)
       @counter = counter
+      @request_opts = @pioneer.request_opts
     end
 
     #
@@ -24,7 +25,6 @@ module Pioneer
     #
     def handle_request_error_or_return_result
       begin
-        @request_opts = @pioneer.request_opts
         req = EM::HttpRequest.new(url, @request_opts).aget pioneer.http_opts
         if pioneer.headers
           req.headers{
