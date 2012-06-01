@@ -148,25 +148,25 @@ crawler = Crawler.new( concurrency: 100, sleep: 0.01, redirects: 2 ... )
 ```
 
 
-  * name
+  * `name`
     Crawler name (for logs)
-  * concurrency
+  * `concurrency`
     concurrency level: how many parallel requests will be handled (default 10)
-  * sleep
+  * `sleep`
     how log should crawler wait between each request (default 0)
-  * log_enabled
+  * `log_enabled`
     logging is enabled by default
-  * log_level
+  * `log_level`
     log level is Logger::DEBUG by default
-  * random_header
+  * `random_header`
     crawler can be a copycat of real browser, you need to turn on random_header to get random browser header (false, by default)
-  * header
+  * `header`
     you can pass your own headers as a hash (cookies i.e.)
-  * redirects
+  * `redirects`
     how many redirects can crawler do (0 by default)
-  * headers
+  * `headers`
     you can specify your own headers callback: manual handle redirects or whatever (see em-http-request, headers callback)
-  * request_opts
+  * `request_opts`
     em-http-request options
 
 .. to be continued
